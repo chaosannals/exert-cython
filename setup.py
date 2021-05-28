@@ -6,7 +6,7 @@ setup(
     ext_modules=cythonize(
         [
             Extension(
-                name="exert",
+                name="exert.hello",
                 sources=["./exert/hello.pyx"],
             ),
         ],
