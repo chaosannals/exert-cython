@@ -1,11 +1,18 @@
+# distutils: language=c++
+
 import pyximport
 pyximport.install()
 
-import datetime
 import exert
+from exert import hello
+from exert.hello import say_hello_to
 
 exert.fib(16)
 
-import hello
+say_hello_to('aaa')
+hello.primes(3)
 
-hello.say_hello_to('aaa')
+from exert import lex
+
+lexer = lex.Lexer()
+

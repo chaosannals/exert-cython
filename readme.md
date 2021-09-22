@@ -6,6 +6,9 @@ python setup.py build_ext
 
 # 输出到原地
 python setup.py build_ext --inplace
+
+# 打包
+python setup.py build_ext sdist bdist_wheel
 ```
 
 ## 细节
